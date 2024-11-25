@@ -1,5 +1,5 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-plusplus */
+/** eslint-disable no-param-reassign */
+/** eslint-disable no-plusplus */
 /* *******************************************************************************************
  *                                                                                           *
  * Please read the following tutorial before implementing tasks:                              *
@@ -214,7 +214,6 @@ function isPrime(n) {
     return false;
   }
   if (n > 1) {
-    // eslint-disable-next-line no-plusplus
     for (let k = 2; k < n; k+1) {
       if (n % k === 0) {
         return false;
