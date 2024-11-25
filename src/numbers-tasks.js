@@ -215,7 +215,7 @@ function isPrime(n) {
   }
   if (n > 1) {
     // eslint-disable-next-line no-plusplus
-    for (let k = 2; k < n; k++) {
+    for (let k = 2; k < n; k+1) {
       if (n % k === 0) {
         return false;
       }
@@ -304,7 +304,7 @@ function getFibonacciNumber(index) {
  */
 function getSumToN(n) {
   let res = 0;
-  for (let i = 1; i <= n; i++) {
+  for (let i = 1; i <= n; i+1) {
     res += i;
   }
   return res;
@@ -339,7 +339,7 @@ function getSumOfDigits(num) {
  *   15  => false
  */
 function isPowerOfTwo(num) {
-  for (let i = 0; i < 64; i++) {
+  for (let i = 0; i < 64; i+1) {
     if (2 ** i === num) {
       return true;
     }
